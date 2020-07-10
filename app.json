@@ -1,0 +1,23 @@
+{
+  "name": "create-react-app-node-heroku",
+  "version": "0.0.1",
+  "description": "CRA with node",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node backend/index.js",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build && mv ./build ../backend/public"
+  },
+  "cacheDirectories": ["frontend/node_modules", "backend/node_modules"],
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vstlouis/create-react-app-node-heroku.git"
+  },
+  "keywords": ["node", "heroku", "create-react-app", "react"],
+  "license": "MIT",
+  "devDependencies": {}
+}
